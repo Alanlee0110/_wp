@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用者註冊</title>
+</head>
+<body>
+    <h2>註冊帳號</h2>
+    <form action="register.php" method="post">
+        <label for="username">使用者名稱：</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="password">密碼：</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <label for="confirm_password">確認密碼：</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+        
+        <label for="phone">手機號碼：</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+        
+        <label for="birthdate">生日：</label>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+        
+        <label for="gender">性別：</label>
+        <select id="gender" name="gender">
+            <option value="male">男</option>
+            <option value="female">女</option>
+            <option value="other">其他</option>
+        </select><br><br>
+        
+        <label for="terms">同意條款：</label>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">我同意使用條款</label><br><br>
+        
+        <button type="submit">提交註冊</button>
+        <button type="reset">重設表單</button>
+    </form>
+</body>
+</html>
